@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nessie Yang · 产品经理</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="theme-dark">
+  <div id="stars-layer" class="stars-layer" aria-hidden="true"></div>
+  <div id="particles-layer" class="particles-layer" aria-hidden="true"></div>
+  <div id="meteor-container" class="meteor-container" aria-hidden="true"></div>
+
+  <!-- ========== 第一幕：星系概览 ========== -->
+  <section id="act1" class="act act1">
+    <h1 class="act1-name">Nessie Yang</h1>
+    <p class="act1-subtitle">AI Researcher ｜ Product Thinker ｜ Growth Practitioner</p>
+    <p class="act1-welcome">欢迎来到我的个人宇宙 (Welcome to my personal universe)</p>
+    <button type="button" class="act1-btn" id="btn-enter">开启探索</button>
+    <p class="act1-hint">Enter Universe</p>
+  </section>
+
+  <!-- 全局固定导航（第二幕及第三幕时显示） -->
+  <header class="nav nav-global hidden" id="global-nav">
+    <div class="nav-left">
+      <a href="#" class="nav-logo" data-goto="hub">Nessie.Y</a>
+      <button type="button" class="nav-back-notes hidden" id="btn-back-notes" aria-label="返回Notes列表">← 返回Notes列表</button>
+    </div>
+    <div class="nav-right">
+      <div class="nav-group">
+        <a href="#" class="nav-link" data-goto="about" data-nav="about">About Me</a>
+        <a href="#" class="nav-link" data-goto="portfolio" data-nav="portfolio">Portfolio</a>
+        <a href="#" class="nav-link" data-goto="notes" data-nav="notes">Notes</a>
+      </div>
+      <div class="nav-group">
+        <a href="#" class="nav-link nav-link-home" data-goto="hub">Home</a>
+        <button type="button" class="nav-link" id="btn-contact-nav">📩 Contact Me</button>
+      </div>
+      <button type="button" class="nav-theme" id="btn-theme" title="切换深浅主题" aria-label="切换主题">
+        <span class="icon-sun">☀</span>
+        <span class="icon-moon">☽</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ========== 第二幕：个人核心舱 ========== -->
+  <section id="act2" class="act act2 hidden">
+    <div class="hub-content">
+      <div class="hub-center">
+        <h2 class="hub-name">Nessie Yang</h2>
+        <p class="hub-tag">AI Researcher · Product Thinker · Growth Practitioner</p>
+        <p class="hub-slogan">具备扎实的用户增长与商业化策略背景，致力于用 AI 赋能业务增长，连接技术边界与商业价值。</p>
+        <button type="button" class="hub-contact-trigger" id="btn-contact-hub">📩 Contact Me</button>
+        <div class="hub-planets">
+          <button type="button" class="planet planet-about" data-goto="about" title="关于我">
+            <span class="planet-label">About Me</span>
+          </button>
+          <button type="button" class="planet planet-portfolio" data-goto="portfolio" title="作品集">
+            <span class="planet-label">Portfolio</span>
+          </button>
+          <button type="button" class="planet planet-notes" data-goto="notes" title="思考与反思">
+            <span class="planet-label">Notes</span>
+          </button>
+        </div>
+      </div>
+      <div class="hub-right">
+        <div class="hub-ip-wrap">
+          <img src="assets/ip.png" alt="Nessie Yang" class="hub-ip-img" />
+        </div>
+        <div class="hub-status">
+          <span class="hub-status-dot"></span>
+          <span>可接机会 · Available for hire</span>
+          <span class="hub-status-icon">✉️</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 第三幕：About Me ========== -->
+  <section id="act3-about" class="act act3 hidden">
+    <div class="about-scroll-wrap">
+      <div class="about-section about-hero">
+        <h2 class="about-title">About Me</h2>
+        <p class="about-subtitle">关于我</p>
+        <div class="about-hero-content">
+          <div class="about-hero-text">
+            <p class="about-manifesto">我是一名专注于 AI 增长与商业化策略的产品实践者。目前在南洋理工大学攻读管理经济学，正努力将商业经济逻辑与技术实操深度结合。在 Meshy.AI、字节跳动、百度等团队的实习过程中沉淀了增长和商业化策略经验。我坚持尝试利用 AI 技术赋能效率提升，驱动更具规模感与确定性的用户和商业增长。性格上，学习与适应能力突出且执行力强（ESTJ），兼具良好的逻辑表达与资源协调能力，能在高压环境下以结果导向保障项目交付。</p>
+            <div class="about-badges">
+              <span class="badge">AI Researcher</span>
+              <span class="badge">Product Thinker</span>
+              <span class="badge">Growth Practitioner</span>
+            </div>
+          </div>
+          <div class="about-hero-visual">
+            <img src="assets/ip.png" alt="" class="about-ip-img" />
+          </div>
+        </div>
+      </div>
+
+      <div class="about-section about-education">
+        <h3 class="about-block-title">Education</h3>
+        <div class="edu-list">
+          <article class="edu-item">
+            <div class="edu-icon edu-icon-img"><img src="assets/ntu-logo.png" alt="南洋理工大学" /></div>
+            <div class="edu-main">
+              <strong>南洋理工大学</strong>
+              <p class="edu-degree">硕士 · 管理经济学</p>
+              <p class="edu-meta">2026.09 - 2027.06</p>
+            </div>
+          </article>
+          <article class="edu-item">
+            <div class="edu-icon edu-icon-img"><img src="assets/jnu-logo.png" alt="暨南大学" /></div>
+            <div class="edu-main">
+              <strong>暨南大学</strong>
+              <p class="edu-degree">本科 · 会计学 · GPA 3.7/5 (TOP 20%)</p>
+              <p class="edu-meta">2020.09 - 2024.06</p>
+              <p class="edu-courses">相关课程：管理经济学、线性代数、微积分、概率论与数理统计、计量经济学、Python 程序设计</p>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="about-section about-experience">
+        <h3 class="about-block-title">Experience</h3>
+        <div class="exp-axis">
+          <div class="exp-line"></div>
+          <article class="exp-item">
+            <span class="exp-node"></span>
+            <div class="exp-content">
+              <strong>Meshy.AI</strong>
+              <p class="exp-role">增长策略产品经理</p>
+              <p class="exp-date">2025.10 - 至今</p>
+              <ul>
+                <li>变现激励体系重塑：建立「注册奖励+付费佣金」双层激励模型，推荐渠道 MRR 贡献占比由 1% 提升至 4%</li>
+                <li>传播获客链路优化：落地海报生成与动态 OG 预览机制，全站推荐流量占比由 &lt;1% 提升至 15%+</li>
+                <li>会员分层与区域定价：增设 Starter Plan，区域新增付费规模增长 10 倍，MRR 提升 60%</li>
+                <li>留存优化：双月订阅周期与权益动态提醒，区域 M1 留存率由 55% 提升至 65%+</li>
+              </ul>
+            </div>
+          </article>
+          <article class="exp-item">
+            <span class="exp-node"></span>
+            <div class="exp-content">
+              <strong>字节跳动 · TikTok Lite</strong>
+              <p class="exp-role">增长策略产品经理</p>
+              <p class="exp-date">2025.07 - 2025.10</p>
+              <ul>
+                <li>激励机制重塑：新客注册转化率由 12% 提升至 18%</li>
+                <li>团长模式与排行榜：分享成功率由 67% 提升至 78%，K 值由 1.57 提升至 2.0</li>
+                <li>新手 7 日激励路径：3 天打卡完成率由 47.6% 提升至 60%</li>
+              </ul>
+            </div>
+          </article>
+          <article class="exp-item">
+            <span class="exp-node"></span>
+            <div class="exp-content">
+              <strong>百度 · MEG 商业化</strong>
+              <p class="exp-role">广告策略产品经理</p>
+              <p class="exp-date">2025.02 - 2025.07</p>
+              <ul>
+                <li>自然语言创编流程：创编时长由 60 分钟缩短至 5 分钟，完成率提升 60%</li>
+                <li>新客冷启动策略：冷启动失败率由 40% 降至 18%，30 日留存率提升至 35%</li>
+                <li>动态出价与成本风控：广告主 ROI 平均提升 25%，跑量效果增长 35%</li>
+                <li>AIGC 创意优化：汽车单素材成本降 80%，采纳率升至 75%</li>
+              </ul>
+            </div>
+          </article>
+          <article class="exp-item">
+            <span class="exp-node"></span>
+            <div class="exp-content">
+              <strong>喜马拉雅</strong>
+              <p class="exp-role">战略投资部 · 商业化广告组战略分析师</p>
+              <p class="exp-date">2024.04 - 2024.09</p>
+              <ul>
+                <li>自营 MCN 业务破局：版权运营+原创达人孵化的双轨策略</li>
+                <li>广告变现与体验平衡：跨平台研究，提炼监控指标与策略</li>
+                <li>激励广告增长变现价值量化：DAU/ARPU/转化路径与 ROI 测算</li>
+              </ul>
+            </div>
+          </article>
+          <article class="exp-item">
+            <span class="exp-node"></span>
+            <div class="exp-content">
+              <strong>埃森哲（中国）</strong>
+              <p class="exp-role">战略咨询 · 战略分析师</p>
+              <p class="exp-date">2023.12 - 2024.03</p>
+              <ul>
+                <li>电摩出海投研：东南亚市场与政策研究，投资风险识别</li>
+                <li>5 年 TCO 经济性模型：油摩与电摩对比，B/C 端场景量化</li>
+                <li>用户选择因子分析：SQL 清洗 + Stata 回归，印尼用户关键影响因素</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="about-section about-tech">
+        <h3 class="about-block-title">Tech Stack</h3>
+        <div class="tech-cards">
+          <div class="tech-card">
+            <span class="tech-card-icon">&#60;/&#62;</span>
+            <h4>Programming</h4>
+            <p>Python, SQL, AI Coding</p>
+          </div>
+          <div class="tech-card">
+            <span class="tech-card-icon">▣</span>
+            <h4>Data Analysis</h4>
+            <p>Machine Learning, Statistical Analysis</p>
+          </div>
+          <div class="tech-card">
+            <span class="tech-card-icon">◇</span>
+            <h4>Tools</h4>
+            <p>Cursor, Figma, Tableau, Excel, PowerPoint</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 第三幕：Portfolio ========== -->
+  <section id="act3-portfolio" class="act act3 hidden">
+    <div class="portfolio-wrap">
+      <h2 class="portfolio-title">Portfolio</h2>
+      <p class="portfolio-subtitle">作品集</p>
+
+      <div class="portfolio-grid">
+        <article class="portfolio-card" data-project="alchemy">
+          <div class="portfolio-card-cover">
+            <img src="assets/alchemy-cover.png" alt="炼金炉" class="portfolio-card-cover-img" />
+          </div>
+          <h3 class="portfolio-card-title">炼金炉 (The Alchemy Cube)</h3>
+          <p class="portfolio-card-desc">将碎片化收藏转化为结构化知识资产的 AI 炼金术。</p>
+          <div class="portfolio-card-tags">
+            <span>AI Native</span>
+            <span>MVP Development</span>
+            <span>Full-stack Prototype</span>
+          </div>
+        </article>
+        <article class="portfolio-card" data-project="takeaway">
+          <div class="portfolio-card-cover">
+            <img src="assets/takeaway-cover.png" alt="外卖扭蛋机" class="portfolio-card-cover-img" />
+          </div>
+          <h3 class="portfolio-card-title">外卖扭蛋机</h3>
+          <p class="portfolio-card-desc">通过「扭蛋抽签」仪式感终结选择困难，实现数据驱动的玄学减脂。</p>
+          <div class="portfolio-card-tags">
+            <span>AI Native</span>
+            <span>用户行为实验</span>
+            <span>交互网页</span>
+          </div>
+        </article>
+        <article class="portfolio-card" data-project="referral">
+          <div class="portfolio-card-cover">
+            <img src="assets/referral-cover.png" alt="跨平台社交裂变系统" class="portfolio-card-cover-img" />
+          </div>
+          <h3 class="portfolio-card-title">AI 驱动的跨平台社交裂变系统</h3>
+          <p class="portfolio-card-desc">重塑分享决策链路，通过差异化媒介适配实现病毒式增长。</p>
+          <div class="portfolio-card-tags">
+            <span>AI 交互原型</span>
+            <span>增长功能设计</span>
+          </div>
+        </article>
+        <article class="portfolio-card" data-project="datacleaner">
+          <div class="portfolio-card-cover">
+            <img src="assets/data-cleaner-1.png" alt="自动化评论清洗与 AI 洞察工具" class="portfolio-card-cover-img" />
+          </div>
+          <h3 class="portfolio-card-title">自动化评论清洗与 AI 洞察工具</h3>
+          <p class="portfolio-card-desc">将 G2 平台繁琐的原始评论处理流程从「小时级」压缩至「秒级」，实现 AI 驱动的用户画像深度分析。</p>
+          <div class="portfolio-card-tags">
+            <span>内部提效工具</span>
+            <span>AI 数据工作流</span>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <div id="portfolio-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+      <div class="modal-backdrop"></div>
+      <div class="modal-content">
+        <button type="button" class="modal-close" aria-label="关闭">×</button>
+        <div class="modal-body">
+          <div id="modal-content-alchemy" class="modal-content-panel" data-project="alchemy">
+            <div class="modal-media modal-media-stack">
+              <img src="assets/alchemy-1.png" alt="炼金炉 · 主输入" class="modal-media-img" />
+              <img src="assets/alchemy-2.png" alt="炼金炉 · 淬炼" class="modal-media-img" />
+              <img src="assets/alchemy-3.png" alt="炼金炉 · 星图" class="modal-media-img" />
+            </div>
+            <div class="modal-text">
+              <h3 id="modal-title">炼金炉 (The Alchemy Cube)</h3>
+              <div class="modal-block">
+                <h4>Why（需求洞察）</h4>
+                <p>炼金炉是一款专注于「知识内化」的碎片化信息管理工具。它通过将「原始素材抓取」与「个人深度创作」彻底隔离，解决用户在微信、小红书、推特等多平台碎片化收藏、后期「找不到、不深度读」的痛点。</p>
+              </div>
+              <div class="modal-block">
+                <h4>Product Logic（产品逻辑）</h4>
+                <p>1. 定义「收纳-炼金-淬炼-归档」闭环，利用 AI 自动提取标题、生成标签并归类；同时支持用户修改标签、重写标题及记录正文心得，解决收藏夹内容杂乱、无法直接复用的痛点。</p>
+                <p>2. 利用 AI Coding 实现动态星图，将笔记标签与标题转化为互联的节点，并支持标题间的逻辑联动；通过可视化的关系网打破「信息孤岛」，帮助用户从全局视角理清不同平台素材间的关联。</p>
+              </div>
+              <a href="https://mingyue-notes.vercel.app/" target="_blank" rel="noopener" class="modal-cta">访问在线网页</a>
+            </div>
+          </div>
+          <div id="modal-content-takeaway" class="modal-content-panel hidden" data-project="takeaway">
+            <div class="modal-media">
+              <img src="assets/takeaway-cover.png" alt="外卖扭蛋机" class="modal-media-img" />
+            </div>
+            <div class="modal-text">
+              <h3>外卖扭蛋机</h3>
+              <div class="modal-block">
+                <h4>Why（需求洞察）</h4>
+                <p><strong>决策疲劳：</strong>深度选择困难症在点餐上平均耗时 30 分钟，导致饥饿感带来的「报复性饮食」。</p>
+                <p><strong>减脂压力：</strong>用户在控制饮食时对卡路里高度敏感，面对海量外卖时存在严重的焦虑感。</p>
+                <p><strong>心理补偿：</strong>用户倾向于将决策压力转移给「命运」或「玄学」，以缓解自律带来的枯燥感。</p>
+              </div>
+              <div class="modal-block">
+                <h4>Product Logic（产品逻辑）</h4>
+                <p><strong>「扭蛋机」决策引擎：</strong>将复杂的筛选逻辑包装为「请示天意」的抽签交互，通过「一键交付命运」极大地缩短决策链路。</p>
+                <p><strong>双重策略模式：</strong>设计「减脂模式」（严格控卡）与「放纵模式」（合理区间内释放需求），满足用户间歇性自律心理。</p>
+                <p><strong>反馈闭环：</strong>同步记录金额与饮食热量，将「糊涂账」转化为可视化报表，通过数据看板（工作日 vs 周末）实现用户行为的自我修正。</p>
+              </div>
+              <a href="https://mingyue-takeaway-choose.onrender.com/" target="_blank" rel="noopener" class="modal-cta">访问在线网页</a>
+            </div>
+          </div>
+          <div id="modal-content-referral" class="modal-content-panel hidden" data-project="referral">
+            <div class="modal-media">
+              <img src="assets/referral-cover.png" alt="跨平台社交裂变系统" class="modal-media-img" />
+            </div>
+            <div class="modal-text">
+              <h3>AI 驱动的跨平台社交裂变系统</h3>
+              <div class="modal-block">
+                <h4>Why（需求洞察）</h4>
+                <p>针对用户体验不足——从可分享的方式和内容看，缺乏吸引力，只能分享文字和链接的痛点，负责落地海报生成与动态 OG 预览机制，并针对 X、WhatsApp 等社交平台进行差异化形态适配。</p>
+              </div>
+              <div class="modal-block">
+                <h4>Product Logic（产品逻辑）</h4>
+                <p><strong>场景入口：</strong>全新的「福利中心」分享组件。用户点击「分享」时唤起沉浸式的「双向奔赴」分享弹窗。核心激励文案：「分享链接邀请新朋友，你和好友都能免费获得 1 个月的 Pro 会员权益！」通过双向互利降低社交压力、提升分享意愿。</p>
+                <p><strong>多维分享矩阵：</strong>弹窗下方集成一站式分享渠道，支持「拷贝链接」「邮件」及「精美海报生成」，满足不同社交圈层展示需求。</p>
+                <p><strong>平台像素级适配：</strong>X (Twitter)——静态预览升级为带播放按钮的动态 OG 图；WhatsApp / Facebook / LinkedIn——自动生成精美 OG Card；Telegram——分享高画质 GIF 或短视频，未点击即可预览核心交互。</p>
+              </div>
+              <a href="https://share-and-win-credits.netlify.app/" target="_blank" rel="noopener" class="modal-cta">查看交互原型</a>
+            </div>
+          </div>
+          <div id="modal-content-datacleaner" class="modal-content-panel hidden" data-project="datacleaner">
+            <div class="modal-media modal-media-stack">
+              <img src="assets/data-cleaner-1.png" alt="评论清洗工具 · 数据上传与 AI 设置" class="modal-media-img" />
+              <img src="assets/data-cleaner-2.png" alt="评论清洗工具 · 结果预览" class="modal-media-img" />
+            </div>
+            <div class="modal-text">
+              <h3>自动化评论清洗与 AI 洞察工具</h3>
+              <div class="modal-block">
+                <h4>Why（需求洞察）</h4>
+                <p><strong>噪声干扰：</strong>G2 导出的原始数据包含大量被拒绝（Rejected）的无效评论，人工筛选耗时耗力。</p>
+                <p><strong>重复劳动：</strong>缺乏增量处理机制，每周更新数据时需重新审阅旧内容。</p>
+                <p><strong>深度缺失：</strong>原始评论仅停留在文字表面，难以快速转化为结构化的行业分布洞察。</p>
+              </div>
+              <div class="modal-block">
+                <h4>Product Logic（产品逻辑）</h4>
+                <p><strong>智能过滤层：</strong>建立自动化过滤逻辑，一键剔除低价值信息，确保后续分析数据的纯净度。</p>
+                <p><strong>增量清洗机制：</strong>通过对比历史数据库，自动识别并锁定本周新增评论，实现「仅处理增量」的敏捷工作流。</p>
+                <p><strong>AI 深度增强 (LLM)：</strong>接入 Gemini 大模型，进行精准的用户行业分类，并自动生成深度洞察报告与回复草稿，将数据处理推向「决策辅助」阶段。</p>
+              </div>
+              <a href="https://mingyueyang-blip.github.io/meshy--data-cleaner/" target="_blank" rel="noopener" class="modal-cta">打开清洗工具</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 第三幕：Notes 列表 ========== -->
+  <section id="act3-notes" class="act act3 hidden">
+    <div class="notes-list-wrap">
+      <h2 class="notes-title">Notes & Reflections</h2>
+      <p class="notes-subtitle">思考与反思</p>
+      <div class="notes-cards" id="notes-cards"></div>
+    </div>
+
+    <div id="note-detail" class="note-detail hidden">
+      <article class="note-detail-body">
+        <h2 class="note-detail-title"></h2>
+        <div class="note-detail-content markdown"></div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ========== Contact 弹窗 ========== -->
+  <div id="contact-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="contact-title" hidden>
+    <div class="modal-backdrop"></div>
+    <div class="modal-content contact-modal-content">
+      <button type="button" class="modal-close" id="btn-contact-close" aria-label="关闭">×</button>
+      <div class="contact-body">
+        <h3 id="contact-title">联系我</h3>
+        <p class="contact-tagline">探索星辰大海，也死磕每一个增长。期待与你交流 AI 或产品思维！</p>
+        <div class="contact-row">
+          <span class="contact-label">微信号</span>
+          <span class="contact-value" data-copy="180-3780-3022">180-3780-3022</span>
+          <button type="button" class="btn-copy" data-copy="180-3780-3022">复制</button>
+        </div>
+        <div class="contact-row">
+          <span class="contact-label">手机</span>
+          <span class="contact-value" data-copy="+8618037803022">+86 180-3780-3022</span>
+          <button type="button" class="btn-copy" data-copy="+8618037803022">复制</button>
+        </div>
+        <div class="contact-row">
+          <span class="contact-label">邮箱</span>
+          <span class="contact-value" data-copy="1805658389@qq.com">1805658389@qq.com</span>
+          <button type="button" class="btn-copy" data-copy="1805658389@qq.com">复制</button>
+        </div>
+        <div class="contact-qr">
+          <img src="assets/wechat-qr.png" alt="微信二维码" />
+          <p>扫码添加微信</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="js/notes-data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
