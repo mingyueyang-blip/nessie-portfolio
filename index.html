@@ -227,6 +227,18 @@
       <p class="portfolio-subtitle">作品集</p>
 
       <div class="portfolio-grid">
+        <article class="portfolio-card" data-project="interview">
+          <div class="portfolio-card-cover">
+            <img src="assets/interview-1.png" alt="AI 用户访谈系统" class="portfolio-card-cover-img" />
+          </div>
+          <h3 class="portfolio-card-title">AI 用户访谈系统</h3>
+          <p class="portfolio-card-desc">AI 驱动的全自动用户深度访谈与洞察生成系统。</p>
+          <div class="portfolio-card-tags">
+            <span>AI 用研</span>
+            <span>对话引擎</span>
+            <span>数字人</span>
+          </div>
+        </article>
         <article class="portfolio-card" data-project="alchemy">
           <div class="portfolio-card-cover">
             <img src="assets/alchemy-cover.png" alt="炼金炉" class="portfolio-card-cover-img" />
@@ -239,16 +251,16 @@
             <span>Full-stack Prototype</span>
           </div>
         </article>
-        <article class="portfolio-card" data-project="takeaway">
+        <article class="portfolio-card" data-project="traffic">
           <div class="portfolio-card-cover">
-            <img src="assets/takeaway-cover.png" alt="外卖扭蛋机" class="portfolio-card-cover-img" />
+            <img src="assets/traffic-1.png" alt="AI Traffic Brief" class="portfolio-card-cover-img" />
           </div>
-          <h3 class="portfolio-card-title">外卖扭蛋机</h3>
-          <p class="portfolio-card-desc">通过「扭蛋抽签」仪式感终结选择困难，实现数据驱动的玄学减脂。</p>
+          <h3 class="portfolio-card-title">AI Traffic Brief</h3>
+          <p class="portfolio-card-desc">基于 PostHog 数据的 AI 驱动流量监控面板，让每个部门一眼看清自己负责的流量表现。</p>
           <div class="portfolio-card-tags">
-            <span>AI Native</span>
-            <span>用户行为实验</span>
-            <span>交互网页</span>
+            <span>数据可视化</span>
+            <span>流量分析</span>
+            <span>AI 分析</span>
           </div>
         </article>
         <article class="portfolio-card" data-project="referral">
@@ -260,6 +272,30 @@
           <div class="portfolio-card-tags">
             <span>AI 交互原型</span>
             <span>增长功能设计</span>
+          </div>
+        </article>
+        <article class="portfolio-card" data-project="foodmap">
+          <div class="portfolio-card-cover">
+            <img src="assets/foodmap-1.png" alt="大学城美食地图" class="portfolio-card-cover-img" />
+          </div>
+          <h3 class="portfolio-card-title">大学城美食地图</h3>
+          <p class="portfolio-card-desc">帮大学生解决"不知道吃什么"的餐饮决策工具，支持单人智能推荐和多人协作选餐厅。</p>
+          <div class="portfolio-card-tags">
+            <span>AI 推荐</span>
+            <span>协作决策</span>
+            <span>本地生活</span>
+          </div>
+        </article>
+        <article class="portfolio-card" data-project="takeaway">
+          <div class="portfolio-card-cover">
+            <img src="assets/takeaway-cover.png" alt="外卖扭蛋机" class="portfolio-card-cover-img" />
+          </div>
+          <h3 class="portfolio-card-title">外卖扭蛋机</h3>
+          <p class="portfolio-card-desc">通过「扭蛋抽签」仪式感终结选择困难，实现数据驱动的玄学减脂。</p>
+          <div class="portfolio-card-tags">
+            <span>AI Native</span>
+            <span>用户行为实验</span>
+            <span>交互网页</span>
           </div>
         </article>
         <article class="portfolio-card" data-project="datacleaner">
@@ -281,14 +317,35 @@
       <div class="modal-content">
         <button type="button" class="modal-close" aria-label="关闭">×</button>
         <div class="modal-body">
-          <div id="modal-content-alchemy" class="modal-content-panel" data-project="alchemy">
+          <div id="modal-content-interview" class="modal-content-panel" data-project="interview">
+            <div class="modal-media modal-media-stack">
+              <img src="assets/interview-1.png" alt="AI 用户访谈 · 数字人对话" class="modal-media-img" />
+              <img src="assets/interview-2.png" alt="AI 用户访谈 · 策略管理后台" class="modal-media-img" />
+              <img src="assets/interview-3.png" alt="AI 用户访谈 · 协议设计器" class="modal-media-img" />
+            </div>
+            <div class="modal-text">
+              <h3 id="modal-title">AI 用户访谈系统</h3>
+              <div class="modal-block">
+                <h4>Why（需求洞察）</h4>
+                <p>Meshy 作为全球化 AI 3D 生成平台，用户遍布 10+ 语言区，传统人工访谈受限于时区、语言和人力成本，单次访谈从招募到产出报告需 3-5 天，且难以覆盖非英语用户群体。该系统通过 AI 访谈员替代人工执行一对一深度访谈，实现 7×24 多语言自动化用研，将单次访谈成本降低 90%，产出周期从天级缩短到秒级。</p>
+              </div>
+              <div class="modal-block">
+                <h4>Product Logic（产品逻辑）</h4>
+                <p><strong>结构化访谈框架：</strong>将专业用研方法论编码为结构化 System Prompt，定义 8 模块渐进式访谈框架（背景→发现→工作流→质量→痛点→竞品→愿望→结尾），内置用户分群检测与自适应追问策略，通过单问题约束、禁止复述、跑题重定向三大规则确保访谈质量。</p>
+                <p><strong>数字人交互界面：</strong>构建数字人访谈界面，采用预录视频双缓冲无缝切换方案模拟真人交互；集成 Google Cloud STT/TTS 实现语音对话，并通过品牌词纠错和 55 秒自动分段解决识别准确率与时长限制问题。</p>
+                <p><strong>自动洞察闭环：</strong>访谈结束后自动调用 Gemini 生成结构化洞察报告（用户画像、工作流地图、痛点清单、竞品对比、关键原话），并通过飞书 API 自动归档转录与报告，形成"访谈→分析→归档"数据闭环。</p>
+              </div>
+              <a href="https://meshy-user-interview.up.railway.app/" target="_blank" rel="noopener" class="modal-cta">体验在线 Demo</a>
+            </div>
+          </div>
+          <div id="modal-content-alchemy" class="modal-content-panel hidden" data-project="alchemy">
             <div class="modal-media modal-media-stack">
               <img src="assets/alchemy-1.png" alt="炼金炉 · 主输入" class="modal-media-img" />
               <img src="assets/alchemy-2.png" alt="炼金炉 · 淬炼" class="modal-media-img" />
               <img src="assets/alchemy-3.png" alt="炼金炉 · 星图" class="modal-media-img" />
             </div>
             <div class="modal-text">
-              <h3 id="modal-title">炼金炉 (The Alchemy Cube)</h3>
+              <h3>炼金炉 (The Alchemy Cube)</h3>
               <div class="modal-block">
                 <h4>Why（需求洞察）</h4>
                 <p>炼金炉是一款专注于「知识内化」的碎片化信息管理工具。它通过将「原始素材抓取」与「个人深度创作」彻底隔离，解决用户在微信、小红书、推特等多平台碎片化收藏、后期「找不到、不深度读」的痛点。</p>
@@ -299,6 +356,66 @@
                 <p>2. 利用 AI Coding 实现动态星图，将笔记标签与标题转化为互联的节点，并支持标题间的逻辑联动；通过可视化的关系网打破「信息孤岛」，帮助用户从全局视角理清不同平台素材间的关联。</p>
               </div>
               <a href="https://mingyue-notes.vercel.app/" target="_blank" rel="noopener" class="modal-cta">访问在线网页</a>
+            </div>
+          </div>
+          <div id="modal-content-traffic" class="modal-content-panel hidden" data-project="traffic">
+            <div class="modal-media modal-media-stack">
+              <img src="assets/traffic-1.png" alt="AI Traffic Brief · Insights 面板" class="modal-media-img" />
+              <img src="assets/traffic-2.png" alt="AI Traffic Brief · 趋势与来源分布" class="modal-media-img" />
+              <img src="assets/traffic-3.png" alt="AI Traffic Brief · 异动检测" class="modal-media-img" />
+            </div>
+            <div class="modal-text">
+              <h3>AI Traffic Brief</h3>
+              <p class="modal-demo-badge" style="display:inline-block;background:#ffd60a;color:#1a1a2e;padding:2px 10px;border-radius:4px;font-size:12px;font-weight:600;margin-bottom:12px;">以下截图为 Demo 数据展示，非真实业务数据</p>
+              <div class="modal-block">
+                <h4>Why（需求洞察）</h4>
+                <p>AI Traffic Brief 是一款面向增长团队的流量监控工具。它将 PostHog 中分散的流量数据按部门视角（Paid Ads、KOL、SEO、Growth PM）自动聚合，解决各团队在日常汇报中需要反复手动拉数据、对口径、做周报的痛点。</p>
+              </div>
+              <div class="modal-block">
+                <h4>Product Logic（产品逻辑）</h4>
+                <p><strong>三层架构：</strong>定义「Brief → Insights → Delivery」三层架构：Brief 自动生成可阅读的流量摘要；Insights 提供多维度交互分析（趋势图、分布图、维度拆解、异动检测）；Delivery 将分析结果转化为可交付的团队汇报内容。</p>
+                <p><strong>AI Deep Dive：</strong>利用 AI Deep Dive 模块对当前数据自动生成深度分析；支持 7 天 / 30 天时间切换、数据口径透明化（hover 查看定义 + PostHog 跳转），帮助团队从「看数」到「懂数」再到「用数」的完整闭环。</p>
+              </div>
+              <span class="modal-cta modal-cta-disabled" style="opacity:0.5;cursor:default;pointer-events:none;">内部项目 · 暂不开放</span>
+            </div>
+          </div>
+          <div id="modal-content-referral" class="modal-content-panel hidden" data-project="referral">
+            <div class="modal-media">
+              <img src="assets/referral-cover.png" alt="跨平台社交裂变系统" class="modal-media-img" />
+            </div>
+            <div class="modal-text">
+              <h3>AI 驱动的跨平台社交裂变系统</h3>
+              <div class="modal-block">
+                <h4>Why（需求洞察）</h4>
+                <p>针对用户体验不足——从可分享的方式和内容看，缺乏吸引力，只能分享文字和链接的痛点，负责落地海报生成与动态 OG 预览机制，并针对 X、WhatsApp 等社交平台进行差异化形态适配。</p>
+              </div>
+              <div class="modal-block">
+                <h4>Product Logic（产品逻辑）</h4>
+                <p><strong>场景入口：</strong>全新的「福利中心」分享组件。用户点击「分享」时唤起沉浸式的「双向奔赴」分享弹窗。核心激励文案：「分享链接邀请新朋友，你和好友都能免费获得 1 个月的 Pro 会员权益！」通过双向互利降低社交压力、提升分享意愿。</p>
+                <p><strong>多维分享矩阵：</strong>弹窗下方集成一站式分享渠道，支持「拷贝链接」「邮件」及「精美海报生成」，满足不同社交圈层展示需求。</p>
+                <p><strong>平台像素级适配：</strong>X (Twitter)——静态预览升级为带播放按钮的动态 OG 图；WhatsApp / Facebook / LinkedIn——自动生成精美 OG Card；Telegram——分享高画质 GIF 或短视频，未点击即可预览核心交互。</p>
+              </div>
+              <a href="https://share-and-win-credits.netlify.app/" target="_blank" rel="noopener" class="modal-cta">查看交互原型</a>
+            </div>
+          </div>
+          <div id="modal-content-foodmap" class="modal-content-panel hidden" data-project="foodmap">
+            <div class="modal-media modal-media-stack">
+              <img src="assets/foodmap-1.png" alt="大学城美食地图 · 地图推荐" class="modal-media-img" />
+              <img src="assets/foodmap-2.png" alt="大学城美食地图 · 组局协作" class="modal-media-img" />
+              <img src="assets/foodmap-3.png" alt="大学城美食地图 · 优惠聚合" class="modal-media-img" />
+            </div>
+            <div class="modal-text">
+              <h3>大学城美食地图</h3>
+              <div class="modal-block">
+                <h4>Why（需求洞察）</h4>
+                <p>大学城美食地图是一款面向大学生的餐饮决策效率工具。它通过「条件化智能推荐」与「多人投票协作」两条核心链路，解决学生在校园周边"一个人不知道吃什么"和"一群人吵半天定不下来"的高频痛点。现有平台（美团/点评）侧重信息展示，缺乏场景感知和决策辅助能力，尤其在多人聚餐场景下几乎空白。</p>
+              </div>
+              <div class="modal-block">
+                <h4>Product Logic（产品逻辑）</h4>
+                <p><strong>「扭一下」推荐引擎：</strong>用户输入场景/预算/口味/距离四个条件，系统通过规则评分（类型匹配→预算适配→时间语境→质量保障）直接输出一个子品类推荐，将决策链路从"浏览 30 家餐厅"压缩为"接受或再扭一次"，并内置距离三级 fallback（5min→10min→全部）确保永不返回空结果。</p>
+                <p><strong>「组局」协作流程：</strong>支持发起→邀请码加入→菜系投票→店铺推荐→一键确认的完整闭环；投票候选由系统基于多因子评分自动生成 4-6 个选项（含多样性约束：重口味≤3），配合实时投票进度条、领先标识和全员已投提示，将群聊里"吃什么"的无结构讨论转化为 2 分钟内可完成的结构化决策。</p>
+              </div>
+              <a href="https://mingyueyang-blip.github.io/metuan-map/" target="_blank" rel="noopener" class="modal-cta">体验在线 Demo</a>
             </div>
           </div>
           <div id="modal-content-takeaway" class="modal-content-panel hidden" data-project="takeaway">
@@ -320,25 +437,6 @@
                 <p><strong>反馈闭环：</strong>同步记录金额与饮食热量，将「糊涂账」转化为可视化报表，通过数据看板（工作日 vs 周末）实现用户行为的自我修正。</p>
               </div>
               <a href="https://mingyue-takeaway-choose.onrender.com/" target="_blank" rel="noopener" class="modal-cta">访问在线网页</a>
-            </div>
-          </div>
-          <div id="modal-content-referral" class="modal-content-panel hidden" data-project="referral">
-            <div class="modal-media">
-              <img src="assets/referral-cover.png" alt="跨平台社交裂变系统" class="modal-media-img" />
-            </div>
-            <div class="modal-text">
-              <h3>AI 驱动的跨平台社交裂变系统</h3>
-              <div class="modal-block">
-                <h4>Why（需求洞察）</h4>
-                <p>针对用户体验不足——从可分享的方式和内容看，缺乏吸引力，只能分享文字和链接的痛点，负责落地海报生成与动态 OG 预览机制，并针对 X、WhatsApp 等社交平台进行差异化形态适配。</p>
-              </div>
-              <div class="modal-block">
-                <h4>Product Logic（产品逻辑）</h4>
-                <p><strong>场景入口：</strong>全新的「福利中心」分享组件。用户点击「分享」时唤起沉浸式的「双向奔赴」分享弹窗。核心激励文案：「分享链接邀请新朋友，你和好友都能免费获得 1 个月的 Pro 会员权益！」通过双向互利降低社交压力、提升分享意愿。</p>
-                <p><strong>多维分享矩阵：</strong>弹窗下方集成一站式分享渠道，支持「拷贝链接」「邮件」及「精美海报生成」，满足不同社交圈层展示需求。</p>
-                <p><strong>平台像素级适配：</strong>X (Twitter)——静态预览升级为带播放按钮的动态 OG 图；WhatsApp / Facebook / LinkedIn——自动生成精美 OG Card；Telegram——分享高画质 GIF 或短视频，未点击即可预览核心交互。</p>
-              </div>
-              <a href="https://share-and-win-credits.netlify.app/" target="_blank" rel="noopener" class="modal-cta">查看交互原型</a>
             </div>
           </div>
           <div id="modal-content-datacleaner" class="modal-content-panel hidden" data-project="datacleaner">
